@@ -18,8 +18,7 @@ import static  org.hamcrest.Matchers.*;
 @SpringBootTest
 class DemoApplicationTests {
 
-//	@Test
-//	void contextLoads() {
+
 		
 			
 			static {
@@ -41,7 +40,7 @@ class DemoApplicationTests {
 
 			@When("User enters HTTP method get")
 			public void userEntersHTTPMethodGet() {
-				response = requestSpecification.when().log().all().get("/api/message/get");
+				response = requestSpecification.when().log().all().get("/api/message");
 			}
 
 			@Then("User receives a message {string}")
